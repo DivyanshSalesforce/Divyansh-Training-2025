@@ -6,6 +6,7 @@ public class abcd {
     public static void queryUserMode(){
         List<Contact> listofContact = [Select Id,Description from Contact with User_MODE];
         System.debug('list of Contacts: '+listofContact.size());
+        System.debug('list of Contacts: '+listofContact.size());
     }
     public static void dmlSystemMode(){
         List<Contact> listofContact = new List<Contact>{(new Contact (LastName = 'Test Contact', description = 'Test Description'))};
